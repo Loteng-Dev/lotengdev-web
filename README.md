@@ -1,5 +1,7 @@
 # Lotengdev website
 
+![Lotengdev web](https://user-images.githubusercontent.com/4420029/197935411-17fd5aed-a9a3-49ef-81ee-612da5181d3f.png)
+
 Lombok Tengah Developer Website
 
 List fitur/halaman:
