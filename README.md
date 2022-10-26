@@ -1,4 +1,4 @@
-# lotengdev website
+# Lotengdev website
 
 Lombok Tengah Developer Website
 
