@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loteng Dev - Beriuk Berajah dan Berkembang</title>
     <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <nav class="bg-slate-900 h-16">
-        <div></div>
-        <div></div>
+  </head>
+  <body>
+    <nav class="m-6 lg:m-10 flex items-center">
+      <div class="pr-10 lg:border-r border-solid border-grey">
+        <img class="h-7 lg:h-11" src="./icons/logo.svg"/>
+      </div>
+      <ul class="hidden lg:flex flex-grow pl-10 list-none">
+        <li class="mr-8"><a href="#">Home</a></li>
+        <li class="mr-8"><a href="#">Acara</a></li>
+        <li class="mr-8"><a href="#">Pembicara</a></li>
+        <li class="mr-8"><a href="#">Tentang</a></li>
+      </ul>
+      <div class="hidden lg:flex justify-center">
+        <button
+          class="flex items-center bg-blue px-4 py-3 mr-4 rounded text-white"
+        >
+          <img class="inline mr-3" src="./icons/telegram.svg"/>Join Group
+        </button>
+        <button
+          class="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded"
+        >
+          <img class="inline mr-3" src="./icons/github.svg"/>Contribute
+        </button>
+      </div>
+      <div class="lg:hidden flex flex-grow justify-end">
+        <img src="./icons/menu.svg"/>
+      </div>
     </nav>
-</body>
+  </body>
 </html>
