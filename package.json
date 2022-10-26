@@ -1,0 +1,26 @@
+{
+  "name": "lotengdev-web",
+  "version": "1.0.0",
+  "description": "Lombok Tengah Developer Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadhabibi14/lotengdev-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadhabibi14/lotengdev-web/issues"
+  },
+  "homepage": "https://github.com/ahmadhabibi14/lotengdev-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}
