@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loteng Dev - Beriuk Berajah dan Berkembang</title>
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body>
-    <nav class="m-6 lg:m-10 flex items-center">
-      <div class="pr-10 lg:border-r border-solid border-grey">
-        <img class="h-7 lg:h-11" src="./icons/logo.svg"/>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loteng Dev - Beriuk Berajah dan Berkembang</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <nav class="m-6 lg:m-10 flex items-center">
+    <div class="pr-10 lg:border-r border-solid border-grey">
+      <img class="h-7 lg:h-11" src="./icons/logo.svg" />
+    </div>
+    <ul class="hidden lg:flex flex-grow pl-10 list-none">
+      <li class="mr-8"><a href="#home">Home</a></li>
+      <li class="mr-8"><a href="#">Acara</a></li>
+      <li class="mr-8"><a href="#">Pembicara</a></li>
+      <li class="mr-8"><a href="#">Tentang</a></li>
+    </ul>
+    <div class="hidden lg:flex justify-center">
+      <button class="flex items-center bg-blue px-4 py-3 mr-4 rounded text-white">
+        <img class="inline mr-3" src="./icons/telegram.svg" />Join Group
+      </button>
+      <button class="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+        <img class="inline mr-3" src="./icons/github.svg" />Contribute
+      </button>
+    </div>
+    <div class="lg:hidden flex flex-grow justify-end">
+      <img src="./icons/menu.svg" />
+    </div>
+  </nav>
+
+  <!-- add home or header -->
+  <div class="flex justify-center items-center h-[80vh]" id="home">
+    <div class="lg:flex justify-center p-[32px]">
+      <img src="./images/rafiki.png" class="lg:w-[30%] lg:h-[30%]" />
+      <div class="lg:w-[50%] lg:mt-0 mt-[25px]">
+        <div class="lg:mb-[16px] mb-[14px]">
+          <span class="lg:text-[60px] text-[28px] font-extrabold lg:leading-[62px] leading-[40px]">Beriuk Berajah dan
+            Berkembang</span>
+        </div>
+        <div class="mb-[32px]">
+          <span class="lg:text-[20px] text-[12px] text-[#5C5C5C]">Komunitas programmer di Lombok Tengah yang membahas
+            hal seputar IT,
+            Programming, dan masih banyak lagi. </span>
+        </div>
+        <div class="flex">
+          <button class="flex items-center bg-blue px-4 py-3 mr-4 rounded text-white text-[12px]">
+            <img class="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src="./icons/telegram.svg" />Join Group
+          </button>
+          <button class="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+            <img class="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src="./icons/github.svg" />Contribute
+          </button>
+        </div>
       </div>
-      <ul class="hidden lg:flex flex-grow pl-10 list-none">
-        <li class="mr-8"><a href="#">Home</a></li>
-        <li class="mr-8"><a href="#">Acara</a></li>
-        <li class="mr-8"><a href="#">Pembicara</a></li>
-        <li class="mr-8"><a href="#">Tentang</a></li>
-      </ul>
-      <div class="hidden lg:flex justify-center">
-        <button
-          class="flex items-center bg-blue px-4 py-3 mr-4 rounded text-white"
-        >
-          <img class="inline mr-3" src="./icons/telegram.svg"/>Join Group
-        </button>
-        <button
-          class="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded"
-        >
-          <img class="inline mr-3" src="./icons/github.svg"/>Contribute
-        </button>
-      </div>
-      <div class="lg:hidden flex flex-grow justify-end">
-        <img src="./icons/menu.svg"/>
-      </div>
-    </nav>
-  </body>
+    </div>
+  </div>
+</body>
+
 </html>
