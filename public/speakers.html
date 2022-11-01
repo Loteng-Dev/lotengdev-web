@@ -28,10 +28,49 @@
         <img class="inline mr-3" src="./icons/github.svg" />Contribute
       </button>
         </div>
-        <div class="lg:hidden flex flex-grow justify-end">
+        <div onclick="show_sidebar()" class="lg:hidden flex flex-grow justify-end">
             <img src="./icons/menu.svg" />
         </div>
     </nav>
+
+    <div id="sidebar" onclick="close_sidebar()" class=" bg-[rgba(0,0,0,.5)] hidden top-0 bottom-0 left-0 right-0 z-10 ">
+        <aside class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800">
+            <div class="flex flex-col justify-between h-full">
+                <div>
+                    <div class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
+                        <img class="h-7 lg:h-11" src="./icons/logo.svg" />
+                        <button type="button" onclick="close_sidebar()" data-drawer-dismiss="drawer-example" aria-controls="drawer-example" class="bg-transparent rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
+                           <img src="./icons/close.svg" alt="close" class="w-5 h-5">
+                        </button>
+                    </div>
+                    <ul class="w-48 text-sm font-bold">
+                        <li class="py-2 px-4 w-full">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="py-2 px-4 w-full">
+                            <a href="#">Acara</a>
+                        </li>
+                        <li class="py-2 px-4 w-full">
+                            <a href="#">
+                                Pembicara
+                            </a>
+                        </li>
+                        <li class="py-2 px-4 w-full">
+                            <a href="#">Tentang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-center ">
+                    <button class="flex justify-center items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded mb-5">
+                    <img class="inline mr-3" src="./icons/github.svg" />Contribute
+                  </button>
+                    <button class="flex justify-center items-center bg-blue px-4 py-3 rounded text-white mb-5">
+                        <img class="inline mr-3" src="./icons/telegram.svg" />Join Group
+                    </button>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <div class="bg-[#F5F5F5] pt-14">
         <section class="text-center w-full">
@@ -163,6 +202,17 @@
                 </li>
             </ul>
         </footer>
+        <script>
+            function show_sidebar() {
+                document.getElementById('sidebar').classList.remove('hidden')
+                document.getElementById('sidebar').classList.add('fixed')
+            }
+
+            function close_sidebar() {
+                document.getElementById('sidebar').classList.remove('fixed')
+                document.getElementById('sidebar').classList.add('hidden')
+            }
+        </script>
 </body>
 
 </html>
