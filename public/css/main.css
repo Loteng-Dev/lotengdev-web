@@ -601,6 +601,10 @@ html {
   margin-top: 50px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-\[14px\] {
   margin-top: 14px;
 }
@@ -637,12 +641,24 @@ html {
   margin-bottom: 32px;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .inline {
@@ -673,8 +689,12 @@ html {
   height: auto;
 }
 
-.h-\[200px\] {
-  height: 200px;
+.h-\[280px\] {
+  height: 280px;
+}
+
+.h-\[64px\] {
+  height: 64px;
 }
 
 .h-\[80vh\] {
@@ -693,18 +713,6 @@ html {
   height: 23px;
 }
 
-.h-\[280px\] {
-  height: 280px;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-\[64px\] {
-  height: 64px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -713,8 +721,8 @@ html {
   width: 280px;
 }
 
-.w-\[200px\] {
-  width: 200px;
+.w-\[63px\] {
+  width: 63px;
 }
 
 .w-\[95\%\] {
@@ -731,10 +739,6 @@ html {
 
 .w-\[23px\] {
   width: 23px;
-}
-
-.w-\[63px\] {
-  width: 63px;
 }
 
 .flex-grow {
@@ -793,8 +797,16 @@ html {
   border-radius: 0.5rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-\[2px\] {
+  border-width: 2px;
 }
 
 .border-t-\[2px\] {
@@ -820,11 +832,6 @@ html {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#007BFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 123 255 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -834,12 +841,21 @@ html {
   background-color: rgba(255,255,255,.5);
 }
 
+.bg-\[\#007BFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 123 255 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-\[32px\] {
   padding: 32px;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-4 {
@@ -867,6 +883,11 @@ html {
   padding-bottom: 0.625rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -879,6 +900,10 @@ html {
   padding-top: 3.5rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -887,12 +912,12 @@ html {
   padding-bottom: 5rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-\[20px\] {
@@ -901,6 +926,10 @@ html {
 
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[24px\] {
@@ -920,8 +949,12 @@ html {
   font-size: 12px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
+.text-\[48px\] {
+  font-size: 48px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-bold {
@@ -960,10 +993,6 @@ html {
   color: rgb(96 96 96 / var(--tw-text-opacity));
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 @font-face {
   font-family: "Poppins";
 
@@ -986,6 +1015,10 @@ html {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:text-\[24px\] {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -993,16 +1026,20 @@ html {
     margin-top: 145px;
   }
 
+  .md\:mt-28 {
+    margin-top: 7rem;
+  }
+
   .md\:mr-6 {
     margin-right: 1.5rem;
   }
 
-  .md\:mt-2 {
-    margin-top: 0.5rem;
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
-  .md\:mt-28 {
-    margin-top: 7rem;
+  .md\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .md\:h-\[320px\] {
@@ -1011,10 +1048,6 @@ html {
 
   .md\:w-\[320px\] {
     width: 320px;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:items-start {
@@ -1029,12 +1062,12 @@ html {
     text-align: left;
   }
 
-  .md\:text-\[24px\] {
-    font-size: 24px;
-  }
-
   .md\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 }
 
@@ -1087,12 +1120,20 @@ html {
     width: auto;
   }
 
+  .lg\:w-\[970px\] {
+    width: 970px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:border-r {
     border-right-width: 1px;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .lg\:text-\[60px\] {
@@ -1103,8 +1144,8 @@ html {
     font-size: 20px;
   }
 
-  .lg\:text-\[32px\] {
-    font-size: 32px;
+  .lg\:text-\[48px\] {
+    font-size: 48px;
   }
 
   .lg\:leading-\[62px\] {
