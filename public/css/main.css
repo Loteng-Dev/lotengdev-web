@@ -600,10 +600,6 @@ html {
   z-index: 40;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .m-6 {
   margin: 1.5rem;
 }
@@ -1088,10 +1084,6 @@ html {
   transition-duration: 150ms;
 }
 
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 @font-face {
   font-family: "Poppins";
 
@@ -1100,6 +1092,22 @@ html {
   font-weight: normal;
 
   font-style: normal;
+}
+
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:hidden:hover {
+  display: none;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
@@ -1117,6 +1125,14 @@ html {
 
   .sm\:text-\[24px\] {
     font-size: 24px;
+  }
+
+  .sm\:opacity-0 {
+    opacity: 0;
+  }
+
+  .sm\:hover\:opacity-100:hover {
+    opacity: 1;
   }
 }
 
@@ -1167,6 +1183,10 @@ html {
 
   .md\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
   }
 }
 
@@ -1249,5 +1269,9 @@ html {
 
   .lg\:leading-\[62px\] {
     line-height: 62px;
+  }
+
+  .lg\:hover\:opacity-100:hover {
+    opacity: 1;
   }
 }
