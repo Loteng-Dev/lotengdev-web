@@ -28,5 +28,25 @@
         "musholla": true,
         "background_music": false,
         "rate_harga": "$"
+    },
+    {
+      "name": "Nama Cafe 4",
+      "lokasi": "link google maps",
+      "wifi": true,
+      "colokan": true,
+      "toilet": true,
+      "musholla": true,
+      "background_music": false,
+      "rate_harga": "$"
+    },
+    {
+      "name": "Nama Cafe 5",
+      "lokasi": "link google maps",
+      "wifi": true,
+      "colokan": true,
+      "toilet": true,
+      "musholla": true,
+      "background_music": false,
+      "rate_harga": "$"
     }
 ]

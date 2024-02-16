@@ -23,25 +23,27 @@
         </ul>
         <div class="hidden lg:flex justify-center">
             <button class="flex items-center bg-blue px-4 py-3 mr-4 rounded text-white">
-        <img class="inline mr-3" src="./icons/telegram.svg" />Join Group
-      </button>
+                <img class="inline mr-3" src="./icons/telegram.svg" />Join Group
+            </button>
             <button class="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
-        <img class="inline mr-3" src="./icons/github.svg" />Contribute
-      </button>
+                <img class="inline mr-3" src="./icons/github.svg" />Contribute
+            </button>
         </div>
         <div onclick="show_sidebar()" class="lg:hidden flex flex-grow justify-end">
             <img src="./icons/menu.svg" />
         </div>
     </nav>
 
-    <div id="sidebar" class=" bg-[rgba(0,0,0,.5)] hidden top-0 bottom-0 left-0 right-0 z-10 ">
+    <div id="sidebar" class="bg-[rgba(0,0,0,.5)] hidden top-0 bottom-0 left-0 right-0 z-10">
         <aside class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800">
             <div class="flex flex-col justify-between h-full">
                 <div>
                     <div class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
                         <img class="h-7 lg:h-11" src="./icons/logo.svg" />
-                        <button type="button" onclick="close_sidebar()" data-drawer-dismiss="drawer-example" aria-controls="drawer-example" class="bg-transparent rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
-                           <img src="./icons/close.svg" alt="close" class="w-5 h-5">
+                        <button type="button" onclick="close_sidebar()" data-drawer-dismiss="drawer-example"
+                            aria-controls="drawer-example"
+                            class="bg-transparent rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
+                            <img src="./icons/close.svg" alt="close" class="w-5 h-5">
                         </button>
                     </div>
                     <ul class="w-48 text-sm font-bold">
@@ -65,57 +67,73 @@
                     </ul>
                 </div>
                 <div class="flex flex-col justify-center ">
-                    <a href="#" class="flex justify-center items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded mb-5">
+                    <a href="#"
+                        class="flex justify-center items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded mb-5">
                         <img class="inline mr-3" src="./icons/github.svg" />Contribute
                     </a>
-                    <a href="#" class="flex justify-center items-center bg-blue px-4 py-3 rounded text-white mb-5">
+                    <a href="#"
+                        class="flex justify-center items-center bg-blue px-4 py-3 rounded text-white mb-5">
                         <img class="inline mr-3" src="./icons/telegram.svg" />Join Group
                     </a>
                 </div>
             </div>
         </aside>
     </div>
-
+   
     <div class="bg-[#F5F5F5] pt-14">
-        <div class="bg-[#F5F5F5] pt-14">
-            <div class="container my-12 mx-auto px-4 md:px-12">
-                <div class="flex flex-wrap -mx-1 lg:-mx-4" id="tempatWFCContainer">
-                    <!-- Data Tempat WFC akan ditampilkan di sini -->
-                </div>
+        <h1 class="text-center tracking-wide text-sm text-indigo-900 font-semibold">Tempat WFC Lombok Tengah</h1>
+        <div class="container my-12 mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap -mx-1 lg:-mx-4" id="tempatWFCContainer">
             </div>
         </div>
+    </div>
 
-        <footer class="p-4">
-            <div class="container mx-auto mt-5 mb-5 flex justify-center items-center">
-                <div class="border-t-[2px] rounded-lg border-grey sm:w-full w-[95%]"></div>
-            </div>
-            <ul class="flex flex-row w-full justify-center items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-                <li>
-                    <a href="#" class="mr-4 md:mr-6 ">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 md:mr-6">Events</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 md:mr-6">Partners</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 md:mr-6">About</a>
-                </li>
-            </ul>
-        </footer>
-        <script>
-            function show_sidebar() {
-                document.getElementById('sidebar').classList.remove('hidden')
-                document.getElementById('sidebar').classList.add('fixed')
+    <footer class="p-4">
+        <div class="container mx-auto mt-5 mb-5 flex justify-center items-center">
+            <div class="border-t-[2px] rounded-lg border-grey sm:w-full w-[95%]"></div>
+        </div>
+        <ul class="flex flex-row w-full justify-center items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 md:mr-6">Home</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 md:mr-6">Events</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 md:mr-6">Partners</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 md:mr-6">About</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        function show_sidebar() {
+            document.getElementById('sidebar').classList.remove('hidden')
+            document.getElementById('sidebar').classList.add('fixed')
+        }
+
+        function close_sidebar() {
+            document.getElementById('sidebar').classList.remove('fixed')
+            document.getElementById('sidebar').classList.add('hidden')
+        }
+
+        function showPriceSymbol(price) {
+            switch (price) {
+                case '$':
+                    return 'murah';
+                case '$$':
+                    return 'standar';
+                case '$$$':
+                    return 'mahal';
+                default:
+                    return '';
             }
+        }
+        
 
-            function close_sidebar() {
-                document.getElementById('sidebar').classList.remove('fixed')
-                document.getElementById('sidebar').classList.add('hidden')
-            }
-
-            fetch('./data/tempat_wfc.json')
+        fetch('./data/tempat_wfc.json')
             .then(response => response.json())
             .then(data => {
                 const tempatWFCContainer = document.getElementById('tempatWFCContainer');
@@ -145,7 +163,7 @@
                                                 <span class="mr-2">Background Music:</span> <span class="font-medium text-${tempat.background_music ? 'green' : 'red'}-500">${tempat.background_music ? '✅' : '❌'}</span>
                                             </div>
                                             <div class="flex items-center text-sm text-gray-500">
-                                                <span class="mr-2">Harga:</span> <span class="font-medium">${tempat.rate_harga}</span>
+                                                <span class="mr-2">Harga:</span> <span class="font-medium">${showPriceSymbol(tempat.rate_harga)}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -156,7 +174,7 @@
                     tempatWFCContainer.insertAdjacentHTML('beforeend', tempatWFCElement);
                 });
             });
-        </script>
+    </script>
 </body>
 
 </html>
