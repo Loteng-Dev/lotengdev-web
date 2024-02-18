@@ -1,0 +1,52 @@
+[
+    {
+      "name": "ARAH COFFEE & CAKE",
+      "lokasi": "https://maps.app.goo.gl/3SYoFTDkKxenTJ1z8",
+      "wifi": true,
+      "colokan": true,
+      "toilet": false,
+      "musholla": false,
+      "background_music": true,
+      "rate_harga": "$"
+    },
+    {
+      "name": "Nuansa Kopi",
+      "lokasi": "https://maps.app.goo.gl/Jqyhv2ntSHiGJTJk8",
+      "wifi": true,
+      "colokan": true,
+      "toilet": true,
+      "musholla": false,
+      "background_music": true,
+      "rate_harga": "$$"
+    },
+    {
+        "name": "Nama Cafe 3",
+        "lokasi": "link google maps",
+        "wifi": true,
+        "colokan": true,
+        "toilet": true,
+        "musholla": true,
+        "background_music": false,
+        "rate_harga": "$"
+    },
+    {
+      "name": "Nama Cafe 4",
+      "lokasi": "link google maps",
+      "wifi": true,
+      "colokan": true,
+      "toilet": true,
+      "musholla": true,
+      "background_music": false,
+      "rate_harga": "$"
+    },
+    {
+      "name": "Nama Cafe 5",
+      "lokasi": "link google maps",
+      "wifi": true,
+      "colokan": true,
+      "toilet": true,
+      "musholla": true,
+      "background_music": false,
+      "rate_harga": "$"
+    }
+]
