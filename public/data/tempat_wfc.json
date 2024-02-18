@@ -20,14 +20,14 @@
       "rate_harga": "$$"
     },
     {
-        "name": "Nama Cafe 3",
-        "lokasi": "link google maps",
+        "name": "HypoKopi praya",
+        "lokasi": "https://maps.app.goo.gl/kNHQjciecdK597dYA",
         "wifi": true,
         "colokan": true,
         "toilet": true,
-        "musholla": true,
-        "background_music": false,
-        "rate_harga": "$"
+        "musholla": false,
+        "background_music": true,
+        "rate_harga": "$$"
     },
     {
       "name": "Nama Cafe 4",
