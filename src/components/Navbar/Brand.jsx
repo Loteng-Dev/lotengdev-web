@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import LogtengDevLogo from '@/assets/lotengdev-logo.svg';
 
-export function Brand(url) {
+export function Brand({ url }) {
   return (
     <div className="pr-10 lg:border-r border-solid border-grey">
       <Link to={url}>
