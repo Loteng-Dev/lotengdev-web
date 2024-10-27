@@ -8,12 +8,12 @@ import HamburgerIcon from '@/assets/icons/menu.svg';
 function CTAButtons() {
     return (
         <div className="hidden lg:flex justify-center">
-            <button className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white">
+            <a href="https://t.me/lotengdev" target="_blank" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white">
                 <img className="inline mr-3" src={TelegramIcon} />Join Group
-            </button>
-            <button className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+            </a>
+            <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
                 <img className="inline mr-3" src={GithubIcon} />Contribute
-            </button>
+            </a>
         </div>
     )
 }
