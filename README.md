@@ -6,9 +6,9 @@ Lombok Tengah Developer Website
 
 List fitur/halaman:
 
-- [ ] Halaman List Event yang sudah terlaksana dan yang akan datang
-- [ ] Halaman daftar pembicara yang sudah berkontribusi mengisi acara
-- [ ] Halaman about yang berisi tentang komunitas
+- [x] Halaman List Event yang sudah terlaksana dan yang akan datang
+- [x] Halaman daftar pembicara yang sudah berkontribusi mengisi acara
+- [x] Halaman about yang berisi tentang komunitas
 
 # 📜 Cara Kontribusi
 
@@ -16,11 +16,24 @@ List fitur/halaman:
 2. Cek [Issue](https://github.com/Loteng-Dev/lotengdev-web/issues) untuk mengambil task yang ingin kamu kerjakan
 3. Lakukan pull request ke repo ini
 
-# 🧰 Tools yang dipakai di Project ini
+# 🧰 Development
 
-1. HTML
-3. Nodejs -- buat install dan setup Tailwind
-3. Tailwind CSS
+Install all depedencies
+
+```bash
+pnpm i
+```
+
+Run the dev server:
+
+```bash
+pnpm dev
+```
+
+# 🚀 Deployment
+
+The website will automaticly deployed to Github Pages using the Github Action.
+The deployment triggered by new commits on `main` branch.
 
 # 📬 Punya saran, ide, atau pertanyaan?
 
