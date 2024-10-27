@@ -1,7 +1,8 @@
 {
   "name": "lotengdev-web",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
+  "homepage": "https://lotengdev.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
